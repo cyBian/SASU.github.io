@@ -1,0 +1,643 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>SASU</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.18ac144a.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-sasu-module-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="SASU" class="md-header-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            SASU
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="SASU" class="md-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SASU
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Home
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+      Home
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-sasu" class="md-nav__link">
+    1. SASU 原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sasu" class="md-nav__link">
+    2. SASU 过程
+  </a>
+  
+    <nav class="md-nav" aria-label="2. SASU 过程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1.  陆地碳循环模型的矩阵化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-spin-up" class="md-nav__link">
+    2.2.  初始spin-up计算平衡碳输入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3.  矩阵方程求解半平衡态碳库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-spin-up" class="md-nav__link">
+    2.4.   再次spin-up达到平衡态结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sasu-clm4" class="md-nav__link">
+    3. SASU 离线模块：以CLM4为例
+  </a>
+  
+    <nav class="md-nav" aria-label="3. SASU 离线模块：以CLM4为例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-clm4" class="md-nav__link">
+    3.1. CLM4 模型简介
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2. 所需模型输出结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-sasu" class="md-nav__link">
+    3.3. SASU 离线模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4. 输出数据描述
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 结果说明
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-sasu" class="md-nav__link">
+    1. SASU 原理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-sasu" class="md-nav__link">
+    2. SASU 过程
+  </a>
+  
+    <nav class="md-nav" aria-label="2. SASU 过程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    2.1.  陆地碳循环模型的矩阵化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-spin-up" class="md-nav__link">
+    2.2.  初始spin-up计算平衡碳输入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    2.3.  矩阵方程求解半平衡态碳库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-spin-up" class="md-nav__link">
+    2.4.   再次spin-up达到平衡态结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-sasu-clm4" class="md-nav__link">
+    3. SASU 离线模块：以CLM4为例
+  </a>
+  
+    <nav class="md-nav" aria-label="3. SASU 离线模块：以CLM4为例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-clm4" class="md-nav__link">
+    3.1. CLM4 模型简介
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2. 所需模型输出结果
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-sasu" class="md-nav__link">
+    3.3. SASU 离线模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    3.4. 输出数据描述
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 结果说明
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="welcome-to-sasu-module-documentation">Welcome to SASU module documentation<a class="headerlink" href="#welcome-to-sasu-module-documentation" title="Permanent link">&para;</a></h1>
+<h2 id="1-sasu">1. SASU 原理<a class="headerlink" href="#1-sasu" title="Permanent link">&para;</a></h2>
+<p>陆地生态系统生物地球化学循环的模拟高度依赖于模型的初始值，因此在利用模型进行分析之前需要设定所有状态量的初始值，这种初始值通常根据观测数据估算得到或者假设为系统在稳定状态下的数值。而后者通常需要较长时间的模型模拟直到各个碳库大小在重复的气象驱动条件下没有趋势的变化为止。</p>
+<p>半解析解加速平衡 (Semi-Analytical Spin-Up,  SASU) 的方法基于陆地生态系统中生物地球化学循环原理。如图所示，大气中的二氧化碳 (CO<sub>2</sub>) 被生态系统中植物吸收后，通过光合作用转变成有机碳形式储存在植物体内，形成生态系统总初级生产力 (Gross Primary Productivity,  GPP) 。经过食物链的传递，成为动物体的碳化合物。植物和动物通过呼吸作用把一部分碳转化为CO<sub>2</sub>释放到大气中。动植物体衰老死亡后，通过残体凋落等形式进入地表，再通过微生物分解而进入土壤，成为土壤有机质。在此过程中，部分碳通过微生物的分解作用转化为CO<sub>2</sub>而最终进入大气。</p>
+<p>在生态系统碳循环模型中通常采用自上而下的碳循环过程来研究生态系统碳动态。光合作用同化吸收的碳，一部分分配到植物的各个组织器官，一部分通过呼吸返回到大气中去。在植物器官中，叶片和细根一般可以存活几个月到几年，而森林中的木质部部分可以存活上百年。植物体死亡后，其残体会转到凋落物碳库中，其中一部分会被微生物分解释放到大气中，剩下的一部分回转仪到土壤碳库 (Soil Organic Matter, SOM) 中，而SOM中的碳，在被土壤微生物完全分解释放到大气中之前，可以存在上百或者上千年的时间。陆地碳循环模型一般采用一阶微分方程描述碳在植物，凋落物以及土壤碳库间的转移过程。将各个碳库转移过程的一阶微分方程组合到一起，可以将碳循环过程转换成矩阵形式。因此，利用矩阵公式可解析性的特点可以加速模型运行至平衡状态。</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/carbon%20cycle.png" alt="fig1" title="陆地生态系统碳循环流程图"  align="middle" /></div>
+
+<h2 id="2-sasu">2. SASU 过程<a class="headerlink" href="#2-sasu" title="Permanent link">&para;</a></h2>
+<p>利用SASU方法加速模型至平衡态的过程主要包括四个步骤：1）陆地碳循环模型矩阵化；2）初始的spin-up得到碳输入的平衡态 <span><span class="MathJax_Preview">U_{ss}</span><script type="math/tex">U_{ss}</script></span> , 以及时间变量的平均值 <span><span class="MathJax_Preview">\overline{\xi}</span><script type="math/tex">\overline{\xi}</script></span> , <span><span class="MathJax_Preview">\overline{A}</span><script type="math/tex">\overline{A}</script></span>, <span><span class="MathJax_Preview">\overline{B}</span><script type="math/tex">\overline{B}</script></span> ；3）矩阵方程的求解半平衡态碳库 <span><span class="MathJax_Preview">X_{ss}</span><script type="math/tex">X_{ss}</script></span> ; 4）利用计算得到的 <span><span class="MathJax_Preview">X_{ss}</span><script type="math/tex">X_{ss}</script></span> 运行最后的spin-up以满足稳态的标准。</p>
+<h3 id="21">2.1.  陆地碳循环模型的矩阵化<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>用SASU方法加速模型转至平衡态之前，首先需要将陆地碳循环模型转化矩阵成矩阵公式，即：</p>
+<p>
+<script type="math/tex; mode=display">
+\frac{dX(t)}{dt} = \xi AKX(t) + BU(t)
+</script>
+其中，<span><span class="MathJax_Preview">X(t)</span><script type="math/tex">X(t)</script></span> 为一个向量，表示模型在 <span><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span> 时刻各个的碳库大小； <span><span class="MathJax_Preview">\textbf{A}</span><script type="math/tex">\textbf{A}</script></span> 表示碳在不同碳库间的转移系数矩阵；<span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span> 为一个对角矩阵，其对角元素表示各个碳库的分解速率； <span><span class="MathJax_Preview">\xi</span><script type="math/tex">\xi</script></span> 表示环境因子对分解速率的影响，其中通常包括温度因子，水分因子等。 <span><span class="MathJax_Preview">\textbf{B}</span><script type="math/tex">\textbf{B}</script></span> 表示光合固定的碳进入到不同碳库的分配系数；<span><span class="MathJax_Preview">U(t)</span><script type="math/tex">U(t)</script></span> 表示 <span><span class="MathJax_Preview">t</span><script type="math/tex">t</script></span> 时刻通过光合作用固定的碳输入。</p>
+<h3 id="22-spin-up">2.2.  初始spin-up计算平衡碳输入<a class="headerlink" href="#22-spin-up" title="Permanent link">&para;</a></h3>
+<p>考虑到矩阵<span><span class="MathJax_Preview">\textbf{A}</span><script type="math/tex">\textbf{A}</script></span>, <span><span class="MathJax_Preview">\textbf{B}</span><script type="math/tex">\textbf{B}</script></span>, 环境因子<span><span class="MathJax_Preview">\xi</span><script type="math/tex">\xi</script></span> 和生态系统碳输入<span><span class="MathJax_Preview">U(t)</span><script type="math/tex">U(t)</script></span> 是时间变化量，因此根据方程（1）不能直接求解得到稳态下的碳库大小。由于碳输入是一个快过程，其稳态结果 <span><span class="MathJax_Preview">U_{ss}</span><script type="math/tex">U_{ss}</script></span> 可以通过短期的spin-up获得。大部分模型利用较长时间阶段的驱动数据迭代模拟来进行spin-up，这为我们利用一段时间重复的驱动数据进行迭代模拟的结果计算环境变量 (<span><span class="MathJax_Preview">\overline{\xi}</span><script type="math/tex">\overline{\xi}</script></span>)、碳转移系数 <span><span class="MathJax_Preview">(\overline{A})</span><script type="math/tex">(\overline{A})</script></span> 以及碳分配系数 <span><span class="MathJax_Preview">(\overline{B})</span><script type="math/tex">(\overline{B})</script></span> 的平均值提供了可能。</p>
+<h3 id="23">2.3.  矩阵方程求解半平衡态碳库<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<p>利用<span><span class="MathJax_Preview">U_{ss}</span><script type="math/tex">U_{ss}</script></span>和 <span><span class="MathJax_Preview">\overline{\xi}</span><script type="math/tex">\overline{\xi}</script></span>，<span><span class="MathJax_Preview">\overline{A}</span><script type="math/tex">\overline{A}</script></span>, <span><span class="MathJax_Preview">\overline{B}</span><script type="math/tex">\overline{B}</script></span> , 通过让方程（1）等于0 可以求解稳态时碳库大小为：
+<script type="math/tex; mode=display">
+X_{ss} = -(\overline{\xi}\overline{A}K)^{-1}\overline{B}U_{ss}
+</script>
+</p>
+<h3 id="24-spin-up">2.4.   再次spin-up达到平衡态结果<a class="headerlink" href="#24-spin-up" title="Permanent link">&para;</a></h3>
+<p>矩阵方程中假设陆地碳循环是一个线性系统，然后实际生物地球化学模型对一些碳过程的模拟是非线性的过程，利用线性系统计算稳态下碳库大小不可避免的会带来一些误差。因此，由矩阵方程求解得到的平衡态下的碳库大小需要通过最终的spin-up进行调整以使其满足所有碳循环过程的平衡态标准。</p>
+<h2 id="3-sasu-clm4">3. SASU 离线模块：以CLM4为例<a class="headerlink" href="#3-sasu-clm4" title="Permanent link">&para;</a></h2>
+<p>考虑到地上植物碳库周转是一个快过程，因此我们假设模型已通过初步的spin-up得到了植被部分碳输入的平衡，本模块中仅以凋落物和土壤碳库为例根据矩阵方程求解平衡态碳库大小，用以简化原生模型中矩阵化的过程，进而实现加速模型达到平衡态的目的。</p>
+<h3 id="31-clm4">3.1. CLM4 模型简介<a class="headerlink" href="#31-clm4" title="Permanent link">&para;</a></h3>
+<p>CLM4 (Community Land Model) 是NCAR于2010年发布的作为CESM1 (Community Earth System Model, Version1) 的陆面模式，CLM4与其前一个版本CLM3.5 (2008年发布) 相比，其引入了当时最近的陆面过程研究结果，更新了地表和大气驱动数据集；改进了对水文过程和雪盖的描述；增加了碳氮循环模式 (CLM-CN) 和城市模式 (CLMU)。陆地生态系统碳氮循环属于生物地球化学模块，按植被功能类型划分为碳库和氮库。植被类型划分为16个：温带常绿针叶林 (NET-Te) 、寒带常绿针叶林 (NET-B) 、北方针叶落叶林 (NDT-B) 、热带常绿阔叶林 (BET-Tr)、温带常绿阔叶林 (BET-Te)、热带落叶阔叶林 (BDT-Tr)、温带落叶阔叶林 (BDT-Te)、北方落叶阔叶林 (BDT-B)、温带常绿阔叶灌木林 (BES-Te)、温带落叶阔叶灌木林 (BDS-Te)、北方落叶阔叶灌木林 (BDS-B)、寒带C3草地 (C3 arctic grass) 、C3草地 (C3 grass)、C4草地 (C4 grass)、农作物 (crop) 和裸地 (No-vegtation)。每个PFT植被包括6个部分，叶、活茎、死茎、活粗根、 死粗根、 细根。凋落物与土壤碳共包含7个部分，粗木质残体 (CWD)、代谢性凋落物碳库 (Litter1)、纤维素凋落物库 (Litter2)、木质素残体凋落物库 (Litter3) 以及三个土壤碳库：微生物土壤碳库 (Soil1)、快性土壤碳库 (Soil2)与惰性土壤碳库 (Soil3)。</p>
+<h3 id="32">3.2. 所需模型输出结果<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>在CLM4中，我们需要模型输出以下变量以应用SASU求解模型平衡态：</p>
+<p>1）环境变量因子，包括水分因子 (W_SCALAR)、温度因子 (T_SCALAR)、氮因子 (FPI_vr) 和氧因子 (O_SCALAR)；</p>
+<p>2）植被碳到凋落物库碳的输入。在CLM4中，植被由土地覆盖变化导致的死粗根和活粗根、火灾 、树木死亡 、作物产量的碳输入到粗木质残体碳库；由土地覆盖变化导致的细根、火灾、细根 ，树木死亡、谷物、作物产量、叶、活茎、物候的碳输入到代谢性凋落物碳库、纤维素凋落物碳库和木质素残体碳库。</p>
+<h3 id="33-sasu">3.3. SASU 离线模块运行步骤<a class="headerlink" href="#33-sasu" title="Permanent link">&para;</a></h3>
+<p>1）矩阵形式转换</p>
+<p>根据CLM4模型结构，我们将凋落物与土壤碳动态转换成矩阵方程表示：</p>
+<div>
+<div class="MathJax_Preview">
+\frac{dX_s(t)}{dt} = A_s\xi(t)K_sX_s(t) + B_s(t)I(t)
+</div>
+<script type="math/tex; mode=display">
+\frac{dX_s(t)}{dt} = A_s\xi(t)K_sX_s(t) + B_s(t)I(t)
+</script>
+</div>
+<p>其中<span><span class="MathJax_Preview">A_s\xi(t)K_sX_s(t)</span><script type="math/tex">A_s\xi(t)K_sX_s(t)</script></span> 表示碳库间转移过程；矩阵<span><span class="MathJax_Preview">A_s</span><script type="math/tex">A_s</script></span>表示碳库间转移系数，<span><span class="MathJax_Preview">K_s</span><script type="math/tex">K_s</script></span> 表示碳库分解速率,  <span><span class="MathJax_Preview">B_s(t)I(t)</span><script type="math/tex">B_s(t)I(t)</script></span> 表示植被碳通过凋落等过程进入分配到CWD以及其他凋落物库。因此，从原生模型中预先得到矩阵 <span><span class="MathJax_Preview">A_s</span><script type="math/tex">A_s</script></span> 和 <span><span class="MathJax_Preview">K_s</span><script type="math/tex">K_s</script></span> 的情况下，可以通过求解矩阵方程得到平衡态时碳库大小，即：</p>
+<div>
+<div class="MathJax_Preview">
+X_{ss} = -(\overline{\xi}A_sK_s)^{-1}\overline{B_s}I_{ss}
+</div>
+<script type="math/tex; mode=display">
+X_{ss} = -(\overline{\xi}A_sK_s)^{-1}\overline{B_s}I_{ss}
+</script>
+</div>
+<p>2）读取数据，计算环境变量、分配系数、碳输入的年均值；</p>
+<p>示例代码如下：
+<div class="highlight"><pre><span></span><code><span class="c1"># preset some initial values used in this module</span>
+<span class="n">env_scalar_ave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nenv</span><span class="p">,</span> <span class="n">nlat</span><span class="p">,</span> <span class="n">nlon</span><span class="p">))</span>
+<span class="n">Cinput_tot_ave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nlat</span><span class="p">,</span> <span class="n">nlon</span><span class="p">))</span>
+<span class="n">b_matrix_ave</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">npools</span><span class="p">,</span> <span class="n">nlat</span><span class="p">,</span> <span class="n">nlon</span><span class="p">))</span>
+
+<span class="c1"># loop for read data</span>
+<span class="k">for</span> <span class="n">iyr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">imon</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nmon</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">icount</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">env_scalar</span>    <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;env_scalar&#39;</span><span class="p">][:]</span>
+        <span class="n">Cinput2cwdc</span>   <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;Cinput2cwdc&#39;</span><span class="p">][:]</span>
+        <span class="n">Cinput2litr1c</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;Cinput2litr1c&#39;</span><span class="p">][:]</span>
+        <span class="n">Cinput2litr2c</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;Cinput2litr2c&#39;</span><span class="p">][:]</span>
+        <span class="n">Cinput2litr3c</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;Cinput2litr3c&#39;</span><span class="p">][:]</span>
+        <span class="n">Cinput_tot</span> <span class="o">=</span> <span class="n">Cinput2cwdc</span> <span class="o">+</span> <span class="n">Cinput2litr1c</span> <span class="o">+</span> <span class="n">Cinput2litr2c</span> <span class="o">+</span> <span class="n">Cinput2litr3c</span>
+
+        <span class="n">b_matrix0</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Cinput2cwdc</span> <span class="o">/</span> <span class="n">Cinput_tot</span>
+        <span class="n">b_matrix0</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Cinput2litr1c</span> <span class="o">/</span> <span class="n">Cinput_tot</span>
+        <span class="n">b_matrix0</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Cinput2litr2c</span> <span class="o">/</span> <span class="n">Cinput_tot</span>
+        <span class="n">b_matrix0</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">Cinput2litr3c</span> <span class="o">/</span> <span class="n">Cinput_tot</span>
+
+        <span class="n">env_scalar_ave</span> <span class="o">=</span> <span class="n">env_scalar_ave</span> <span class="o">+</span> <span class="n">env_scalar</span>
+        <span class="n">Cinput_tot_ave</span> <span class="o">=</span> <span class="n">Cinput_tot_ave</span> <span class="o">+</span> <span class="n">Cinput_tot</span>
+        <span class="n">b_matrix_ave</span>   <span class="o">=</span> <span class="n">b_matrix_ave</span>   <span class="o">+</span> <span class="n">b_matrix0</span>
+
+<span class="c1"># after end of loop, calculate the mean value of env_scalar, C_input, and b_matrix</span>
+<span class="n">env_scalar_ave</span> <span class="o">=</span> <span class="n">env_scalar_ave</span> <span class="o">/</span> <span class="p">(</span><span class="n">nyr</span> <span class="o">*</span> <span class="n">nmon</span><span class="p">)</span>
+<span class="n">Cinput_tot_ave</span> <span class="o">=</span> <span class="n">Cinput_tot_ave</span> <span class="o">/</span> <span class="p">(</span><span class="n">nyr</span> <span class="o">*</span> <span class="n">nmon</span><span class="p">)</span>
+<span class="n">b_matrix_ave</span>   <span class="o">=</span> <span class="n">b_matrix_ave</span> <span class="o">/</span> <span class="p">(</span><span class="n">nyr</span> <span class="o">*</span> <span class="n">nmon</span><span class="p">)</span>
+</code></pre></div>
+3）求解矩阵方程</p>
+<p>示例代码如下：
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">ilat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlat</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ilon</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlon</span><span class="p">):</span>
+        <span class="n">matrix_B</span>  <span class="o">=</span> <span class="n">b_matrix</span><span class="p">(</span><span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">,</span> <span class="n">npools</span><span class="p">,</span> <span class="n">b_matrix_ave</span><span class="p">)</span>
+        <span class="n">scalar</span>    <span class="o">=</span> <span class="n">env_scalar</span><span class="p">[:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">matrix_A</span>  <span class="o">=</span> <span class="n">a_matrix</span><span class="p">()</span>
+        <span class="n">matrix_K</span>  <span class="o">=</span> <span class="n">k_matrix</span><span class="p">(</span><span class="n">scalar</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">scalar</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">scalar</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">scalar</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="n">matrix_AK</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">matrix_A</span><span class="p">,</span> <span class="n">matrix_K</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">matrix_AKinv</span> <span class="o">=</span> <span class="n">inverse</span><span class="p">(</span><span class="n">matrixAK</span><span class="p">)</span>
+            <span class="n">cpool_out</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">matrix_AKinv</span><span class="p">,</span> <span class="n">matrix_B</span><span class="p">)</span> <span class="o">*</span> <span class="n">C_in</span><span class="p">[</span><span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">cpool_out</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span> <span class="k">for</span> <span class="n">icpool</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">npools</span><span class="p">)]</span>
+
+        <span class="n">Cpools_out</span><span class="p">[:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span> <span class="o">=</span> <span class="n">cpool_out</span>
+</code></pre></div></p>
+<p>4）输出半平衡态下碳库结果至NC文件</p>
+<p>示例代码如下：
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. open file and create a new dataset</span>
+<span class="n">nc_out</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="s1">&#39;Cpool_output.nc&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;NETCDF4&#39;</span><span class="p">)</span>
+
+<span class="c1"># 2. creating dimensions</span>
+<span class="n">lat_din</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createDimension</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="n">nlat</span><span class="p">)</span>
+<span class="n">lon_dim</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createDimension</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="n">nlon</span><span class="p">)</span>
+
+<span class="c1"># 3. create variables</span>
+<span class="n">lat_new</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createVariable</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">flote32</span><span class="p">,(</span><span class="s1">&#39;lat&#39;</span><span class="p">))</span>
+<span class="n">lat_new</span><span class="o">.</span><span class="n">units</span> <span class="o">=</span> <span class="s1">&#39;degrees_north&#39;</span>
+<span class="n">lat_new</span><span class="o">.</span><span class="n">long_name</span> <span class="o">=</span> <span class="s1">&#39;latitude&#39;</span>
+<span class="n">lon_new</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createVariable</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">))</span>
+<span class="n">lon_new</span><span class="o">.</span><span class="n">units</span> <span class="o">=</span> <span class="s1">&#39;degrees_east&#39;</span>
+<span class="n">lon_new</span><span class="o">.</span><span class="n">long_name</span> <span class="o">=</span> <span class="s1">&#39;longitude&#39;</span>
+<span class="n">time</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createVariable</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">))</span>
+<span class="n">nvar</span> <span class="o">=</span> <span class="n">nc_out</span><span class="o">.</span><span class="n">createVariable</span><span class="p">(</span><span class="n">Var_Name</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="s1">&#39;lon&#39;</span><span class="p">))</span>
+
+<span class="c1"># 4. write data to nc file</span>
+<span class="n">nc_out</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">][:]</span> <span class="o">=</span> <span class="n">lat</span>
+<span class="n">nc_out</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">][:]</span> <span class="o">=</span> <span class="n">lon</span>
+<span class="n">nv_out</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">&#39;Var_name&#39;</span><span class="p">][:]</span> <span class="o">=</span> <span class="n">Var_value</span>
+
+<span class="c1"># 5. close the output nc file</span>
+<span class="n">nc_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> 
+</code></pre></div></p>
+<h3 id="34">3.4. 输出数据描述<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<p>通过上述SASU离线模块，我们可以得到各凋落物和土壤碳库半平衡态下的碳库结果，包括粗木质残体 (CWD)、代谢性凋落物碳库 (Litter1)、纤维素凋落物库 (Litter2)、木质素残体凋落物库 (Litter3) 、微生物土壤碳库 (Soil1)、快性土壤碳库 (Soil2)与惰性土壤碳库 (Soil3)。</p>
+<p>凋落物及土壤总碳库分布图如下：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/Ctot_Carbon_Storage.png" alt="Ctot carbon storage"  align="center" /></div>
+
+<p>各碳库储量全球分布图如下：
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/CWDC_Carbon_Storage.png" alt="CWDC carbon storage"  align="center" /></div></p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/LITR1C_Carbon_Storage.png" alt="Litter1 carbon storage"  align="center" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/LITR2C_Carbon_Storage.png" alt="Litter2 carbon storage"  align="center" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/LITR3C_Carbon_Storage.png" alt="Litter3 carbon storage"  align="center" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/SOIL1C_Carbon_Storage.png" alt="Soil1 carbon storage"  align="center" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/SOIL2C_Carbon_Storage.png" alt="Soil2 carbon storage"  align="center" /></div>
+
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/SOIL3C_Carbon_Storage.png" alt="Soil3 carbon storage"  align="center" /></div>
+
+<h2 id="4">4. 结果说明<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>[1] Xia J, Luo Y, Wang Y-P, Weng E, Hararuk O. 2012. A semi-analytical solution to accelerate spin-up of coupled carbon and nitrogen land models to steady states. <strong>Geoscientific Model Development</strong> 5, 1259-1271(<a href="https://www.geosci-model-dev.net/5/1259/2012/gmd-5-1259-2012.html">https://www.geosci-model-dev.net/5/1259/2012/gmd-5-1259-2012.html</a>)</p>
+<p>[2] Huang Y, Lu X, Shi Z, Lawrence D, Koven C,Xia J, Du Z, Kluzek E, Luo Y. 2018. Matrix approach to land carbon cycle modeling: A case study with Community Land Model. <strong>Global Change Biology</strong> 24: 1394-1404 (<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13948">https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.13948</a>)</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
