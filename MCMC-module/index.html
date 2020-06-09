@@ -204,16 +204,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-mcmc" class="md-nav__link">
-    2. MCMC 模块
+  <a href="#2" class="md-nav__link">
+    2. 数据来源
   </a>
   
-    <nav class="md-nav" aria-label="2. MCMC 模块">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mcmc" class="md-nav__link">
+    3. MCMC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MCMC 模块">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-mcmc" class="md-nav__link">
-    2.1 MCMC 模块运行步骤
+  <a href="#31-mcmc" class="md-nav__link">
+    3.1 MCMC 模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 输出结果描述
   </a>
   
 </li>
@@ -224,8 +238,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. 结果
+  <a href="#4" class="md-nav__link">
+    4. 小结
   </a>
   
 </li>
@@ -277,16 +291,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-mcmc" class="md-nav__link">
-    2. MCMC 模块
+  <a href="#2" class="md-nav__link">
+    2. 数据来源
   </a>
   
-    <nav class="md-nav" aria-label="2. MCMC 模块">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mcmc" class="md-nav__link">
+    3. MCMC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MCMC 模块">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-mcmc" class="md-nav__link">
-    2.1 MCMC 模块运行步骤
+  <a href="#31-mcmc" class="md-nav__link">
+    3.1 MCMC 模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 输出结果描述
   </a>
   
 </li>
@@ -297,8 +325,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    3. 结果
+  <a href="#4" class="md-nav__link">
+    4. 小结
   </a>
   
 </li>
@@ -467,9 +495,12 @@ p(Z|\theta) \propto exp\begin{Bmatrix}{-\sum \frac{[Z_i-\phi_i \times X]^2}{2\si
 </div>
 <p>其中 <span><span class="MathJax_Preview">\theta_{old}</span><script type="math/tex">\theta_{old}</script></span> 和 <span><span class="MathJax_Preview">\theta_{new}</span><script type="math/tex">\theta_{new}</script></span> 分别是之前接受的参数和新产生的参数。<span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 是在-0.5 到 0.5 之间的随机变量，D用来控制移动步长在本模块中我们根据Xu等人（2006）的结果将其设为5。在每一个产生参数的步骤中，新产生的参数根据Metropolis 指标判断是否接受这一参数，这一指标是根据新参数的似然度函数相比上一个接受的参数的似然度函数是否有所提高。</p>
 <p>条件反演是分阶段利用贝叶斯概率反演过程的方法，原理是将上一阶段已约束的参数固定（即取其最优值）作为已知参数，然后进入下一阶段反演过程，依次顺序，直至没有更多待优化参数被约束为止。</p>
-<h2 id="2-mcmc">2. MCMC 模块<a class="headerlink" href="#2-mcmc" title="Permanent link">&para;</a></h2>
-<h3 id="21-mcmc">2.1 MCMC 模块运行步骤<a class="headerlink" href="#21-mcmc" title="Permanent link">&para;</a></h3>
-<p>1）MCMC 部分示例代码如下；</p>
+<h2 id="2">2. 数据来源<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。HWSD的土壤特性代表了在成岩发育、土地利用和在干扰历史下各个阶段的真实土壤剖面数据。我们意识到土壤是一个动态且非均质的环境，因此HWSD的观测结果在当前的气候、植被和土地管理的活动下不一定处于平衡态。然而本模块中我们的目标是优化模型参数，评估模型是否模拟了与现实世界中观测结果大致相似的土壤碳库。HWSD代表了最详尽、最全面的土壤特征数据库，是可用于评估生态系统模型中土壤生物地球化学模块的有力资源。</p>
+<p>HWSD的土壤包括表层土壤有机碳（0-30cm）和深层土壤有机碳（30-100cm）。考虑到HWSD原始数据的分辨率和模型分辨率不一致，因此本模块中我们使用了由Wieder et al. (2014) 等人由HWSD原始分辨率（30 arc sec）插值到CLM模型分辨率的数据产品用来进行模型的限制和评估。（数据来源：<a href="https://daac.ornl.gov/SOILS/guides/HWSD.html">https://daac.ornl.gov/SOILS/guides/HWSD.html</a>)</p>
+<h2 id="3-mcmc">3. MCMC 模块<a class="headerlink" href="#3-mcmc" title="Permanent link">&para;</a></h2>
+<h3 id="31-mcmc">3.1 MCMC 模块运行步骤<a class="headerlink" href="#31-mcmc" title="Permanent link">&para;</a></h3>
+<p>MCMC 部分示例代码如下；</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">simu</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsimu1</span><span class="p">):</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
         <span class="n">par_new</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -525,12 +556,26 @@ p(Z|\theta) \propto exp\begin{Bmatrix}{-\sum \frac{[Z_i-\phi_i \times X]^2}{2\si
         <span class="n">J_rec</span><span class="p">[</span><span class="n">simu</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">J_old</span>
 </code></pre></div>
 
-<h2 id="3">3. 结果<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/Posterior%20probability%20distribution%20of%20the%20model%20parameters%20in%20CLM4%20(new).png" alt="Poisterior probability distribution of the model parameters in the CLM4"  align="center" /></div>
+<h3 id="32">3.2 输出结果描述<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>通过上述MCMC离线模块，我们基于土壤碳库观测数据实现了对模型参数的限制并进一步利用限制后的参数进行模拟。</p>
+<p>基于MCMC约束的各参数后验概率密度分布图：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MCMC_glob_img/Posterior%20probability%20distribution%20of%20the%20model%20parameters%20in%20CLM4%20(new).png" alt="Poisterior probability distribution of the model parameters in the CLM4"  align="center" /></div>
 
+<p>模拟的土壤碳库全球分布图：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MCMC_glob_img/SOC_fromMCMC_globalmap.png" alt="Poisterior probability distribution of the model parameters in the CLM4"  align="center" /></div>
+
+<p>HWSD观测土壤碳库全球分布：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MCMC_glob_img/SOC_hwsd_globalmap.png" alt="Poisterior probability distribution of the model parameters in the CLM4"  align="center" /></div>
+
+<p>模拟与观测碳库差异全球分布：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MCMC_glob_img/SOC_hwsd2emu_globalmap.png" alt="Poisterior probability distribution of the model parameters in the CLM4"  align="center" /></div>
+
+<h2 id="4">4. 小结<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>土壤有机碳库是陆地生态系统最大的碳库，储存在土壤中的碳是植被和大气中所储存碳总量的三倍。因此准确模拟陆地生态系统土壤碳库是反映陆地生态系统和大气碳净气体交换的关键。然而现阶段不同模型对土壤碳库的模拟存在5-6倍的差异，模拟的结果存在巨大的不确定性。模型参数作为模型中的基础部分，是其不确定性的重要来源。本模块中应用数据同化方法，基于观测值对模型参数进行限制，使得模型参数在很大程度上被优化，进而更为准确的模拟土壤碳库。</p>
 <h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>[1] Xu, T., White, L., Hui, D. F., &amp; Luo, Y. Q. 2006. Probabilistic inversion of a terrestrial ecosystem model: analysis of uncertainty in parameter estimation and model prediction. <strong>Glob. Biogeochem. Cycles</strong> 20, GB2007 <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2005GB002468">doi: 10.1029/2005GB002468</a></p>
-<p>[2] Zheng Shi, Sean Crowell, Yiqi Luo, and Berrien Moore III. 2018. Model structures amplify uncertainty in predicted soil carbon responses to climate change. <strong>Nature Communications</strong>, 9: 2171 <a href="https://www.nature.com/articles/s41467-018-04526-9">doi: 10.1038/s41467-018-04526-9</a></p>
+<p>[2] Wieder, W. R., Boehnert, J., and Bonan, G. B. ( 2014), Evaluating soil biogeochemistry parameterizations in Earth system models with observations, <strong>Global Biogeochem. Cycles</strong>, 28, 211– 222 <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2013GB004665">doi:10.1002/2013GB004665</a></p>
+<p>[3] Zheng Shi, Sean Crowell, Yiqi Luo, and Berrien Moore III. 2018. Model structures amplify uncertainty in predicted soil carbon responses to climate change. <strong>Nature Communications</strong>, 9: 2171 <a href="https://www.nature.com/articles/s41467-018-04526-9">doi: 10.1038/s41467-018-04526-9</a></p>
                 
               
               
