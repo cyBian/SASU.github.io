@@ -493,7 +493,7 @@ p(Z|\theta) \propto exp\begin{Bmatrix}{-\sum \frac{[Z_i-\phi_i \times X]^2}{2\si
 \theta_{new} = \theta_{old} + r \times (\theta_{max} - \theta_{min})/D
 </script>
 </div>
-<p>其中 <span><span class="MathJax_Preview">\theta_{old}</span><script type="math/tex">\theta_{old}</script></span> 和 <span><span class="MathJax_Preview">\theta_{new}</span><script type="math/tex">\theta_{new}</script></span> 分别是之前接受的参数和新产生的参数。<span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 是在-0.5 到 0.5 之间的随机变量，D用来控制移动步长在本模块中我们根据Xu et al（2006）的结果将其设为5。在每一个产生参数的步骤中，新产生的参数根据Metropolis 指标判断是否接受这一参数，这一指标是根据新参数的似然度函数相比上一个接受的参数的似然度函数是否有所提高。</p>
+<p>其中 <span><span class="MathJax_Preview">\theta_{old}</span><script type="math/tex">\theta_{old}</script></span> 和 <span><span class="MathJax_Preview">\theta_{new}</span><script type="math/tex">\theta_{new}</script></span> 分别是之前接受的参数和新产生的参数。<span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 是在-0.5 到 0.5 之间的随机变量，D用来控制移动步长在本模块中我们根据Xu et al.（2006）的结果将其设为5。在每一个产生参数的步骤中，新产生的参数根据Metropolis 指标判断是否接受这一参数，这一指标是根据新参数的似然度函数相比上一个接受的参数的似然度函数是否有所提高。</p>
 <p>条件反演是分阶段利用贝叶斯概率反演过程的方法，原理是将上一阶段已约束的参数固定（即取其最优值）作为已知参数，然后进入下一阶段反演过程，依次顺序，直至没有更多待优化参数被约束为止。</p>
 <h2 id="2">2. 数据来源<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。HWSD的土壤特性代表了在成岩发育、土地利用和在干扰历史下各个阶段的真实土壤剖面数据。我们意识到土壤是一个动态且非均质的环境，因此HWSD的观测结果在当前的气候、植被和土地管理的活动下不一定处于平衡态。然而本模块中我们的目标是优化模型参数，评估模型是否模拟了与现实世界中观测结果大致相似的土壤碳库。HWSD代表了最详尽、最全面的土壤特征数据库，是可用于评估生态系统模型中土壤生物地球化学模块的有力资源。</p>
