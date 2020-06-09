@@ -493,7 +493,7 @@ p(Z|\theta) \propto exp\begin{Bmatrix}{-\sum \frac{[Z_i-\phi_i \times X]^2}{2\si
 \theta_{new} = \theta_{old} + r \times (\theta_{max} - \theta_{min})/D
 </script>
 </div>
-<p>其中 <span><span class="MathJax_Preview">\theta_{old}</span><script type="math/tex">\theta_{old}</script></span> 和 <span><span class="MathJax_Preview">\theta_{new}</span><script type="math/tex">\theta_{new}</script></span> 分别是之前接受的参数和新产生的参数。<span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 是在-0.5 到 0.5 之间的随机变量，D用来控制移动步长在本模块中我们根据Xu等人（2006）的结果将其设为5。在每一个产生参数的步骤中，新产生的参数根据Metropolis 指标判断是否接受这一参数，这一指标是根据新参数的似然度函数相比上一个接受的参数的似然度函数是否有所提高。</p>
+<p>其中 <span><span class="MathJax_Preview">\theta_{old}</span><script type="math/tex">\theta_{old}</script></span> 和 <span><span class="MathJax_Preview">\theta_{new}</span><script type="math/tex">\theta_{new}</script></span> 分别是之前接受的参数和新产生的参数。<span><span class="MathJax_Preview">r</span><script type="math/tex">r</script></span> 是在-0.5 到 0.5 之间的随机变量，D用来控制移动步长在本模块中我们根据Xu et al（2006）的结果将其设为5。在每一个产生参数的步骤中，新产生的参数根据Metropolis 指标判断是否接受这一参数，这一指标是根据新参数的似然度函数相比上一个接受的参数的似然度函数是否有所提高。</p>
 <p>条件反演是分阶段利用贝叶斯概率反演过程的方法，原理是将上一阶段已约束的参数固定（即取其最优值）作为已知参数，然后进入下一阶段反演过程，依次顺序，直至没有更多待优化参数被约束为止。</p>
 <h2 id="2">2. 数据来源<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。HWSD的土壤特性代表了在成岩发育、土地利用和在干扰历史下各个阶段的真实土壤剖面数据。我们意识到土壤是一个动态且非均质的环境，因此HWSD的观测结果在当前的气候、植被和土地管理的活动下不一定处于平衡态。然而本模块中我们的目标是优化模型参数，评估模型是否模拟了与现实世界中观测结果大致相似的土壤碳库。HWSD代表了最详尽、最全面的土壤特征数据库，是可用于评估生态系统模型中土壤生物地球化学模块的有力资源。</p>
@@ -574,7 +574,7 @@ p(Z|\theta) \propto exp\begin{Bmatrix}{-\sum \frac{[Z_i-\phi_i \times X]^2}{2\si
 <p>土壤有机碳库是陆地生态系统最大的碳库，储存在土壤中的碳是植被和大气中所储存碳总量的三倍。因此准确模拟陆地生态系统土壤碳库是反映陆地生态系统和大气碳净气体交换的关键。然而现阶段不同模型对土壤碳库的模拟存在5-6倍的差异，模拟的结果存在巨大的不确定性。模型参数作为模型中的基础部分，是其不确定性的重要来源。本模块中应用数据同化方法，基于观测值对模型参数进行限制，使得模型参数在很大程度上被优化，进而更为准确的模拟土壤碳库。</p>
 <h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>[1] Xu, T., White, L., Hui, D. F., &amp; Luo, Y. Q. 2006. Probabilistic inversion of a terrestrial ecosystem model: analysis of uncertainty in parameter estimation and model prediction. <strong>Glob. Biogeochem. Cycles</strong> 20, GB2007 <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2005GB002468">doi: 10.1029/2005GB002468</a></p>
-<p>[2] Wieder, W. R., Boehnert, J., and Bonan, G. B. ( 2014), Evaluating soil biogeochemistry parameterizations in Earth system models with observations, <strong>Global Biogeochem. Cycles</strong>, 28, 211– 222 <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2013GB004665">doi:10.1002/2013GB004665</a></p>
+<p>[2] Wieder, W. R., Boehnert, J., and Bonan, G. B. 2014. Evaluating soil biogeochemistry parameterizations in Earth system models with observations, <strong>Global Biogeochem. Cycles</strong>, 28, 211– 222 <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2013GB004665">doi:10.1002/2013GB004665</a></p>
 <p>[3] Zheng Shi, Sean Crowell, Yiqi Luo, and Berrien Moore III. 2018. Model structures amplify uncertainty in predicted soil carbon responses to climate change. <strong>Nature Communications</strong>, 9: 2171 <a href="https://www.nature.com/articles/s41467-018-04526-9">doi: 10.1038/s41467-018-04526-9</a></p>
                 
               
