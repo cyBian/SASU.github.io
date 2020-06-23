@@ -1,0 +1,552 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>MStr-BGC module - SASU</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.18ac144a.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mstr-bgc-module-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="SASU" class="md-header-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            SASU
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              MStr-BGC module
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SASU" class="md-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SASU
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="SASU module" class="md-nav__link">
+      SASU module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MCMC-module/" title="MCMC module" class="md-nav__link">
+      MCMC module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MStr-BGC module
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="MStr-BGC module" class="md-nav__link md-nav__link--active">
+      MStr-BGC module
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mstr-bgc" class="md-nav__link">
+    1. MStr-BGC简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 数据来源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mstr-bgc" class="md-nav__link">
+    3. MStr-BGC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MStr-BGC 模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-mstr-bgc" class="md-nav__link">
+    3.1 MStr-BGC 模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 输出结果描述
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 小结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-mstr-bgc" class="md-nav__link">
+    1. MStr-BGC简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 数据来源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mstr-bgc" class="md-nav__link">
+    3. MStr-BGC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MStr-BGC 模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-mstr-bgc" class="md-nav__link">
+    3.1 MStr-BGC 模块运行步骤
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    3.2 输出结果描述
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. 小结
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="mstr-bgc-module-documentation">MStr-BGC module documentation<a class="headerlink" href="#mstr-bgc-module-documentation" title="Permanent link">&para;</a></h1>
+<h2 id="1-mstr-bgc">1. MStr-BGC简介<a class="headerlink" href="#1-mstr-bgc" title="Permanent link">&para;</a></h2>
+<p>随着模型的发展，融合了越来越多的过程和参数，因此使模型变得越来越复杂。增加过程所带来的增加模型现实度的同时，也增加了模型的不确定性，即不同模型间的模拟结果存在巨大差异。造成模型间差异的可能原因包括对氮吸收、微生物过程、土壤深度和死亡率等过程的不完整的理解和表示。</p>
+<p>Multi-Structure BioGeoChemistry （MStr-BGC）模块 以CLM（Community Land Model）模型为例，将原模型使用平衡方程描述的生态系统碳动态转化为对应的一阶矩阵方程。CLM4和CLM4.5的主要区别在于CLM4.5中增加了土壤垂直结构，因此本模块考虑了土壤垂直结构的差异对碳储量的影响。因此，本模块通过模拟不同土壤结构对生物地球化学循环模拟的影响，比较不同结构模型模拟的差异。以期借此选择性能最优的模型结构进行有针对性的模拟，进而提高陆面生态系统过程模型在区域尺度的模拟精度。</p>
+<h2 id="2">2. 数据来源<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。即MCMC模块中所用数据库，因此本篇不再赘述。</p>
+<h2 id="3-mstr-bgc">3. MStr-BGC 模块<a class="headerlink" href="#3-mstr-bgc" title="Permanent link">&para;</a></h2>
+<h3 id="31-mstr-bgc">3.1 MStr-BGC 模块运行步骤<a class="headerlink" href="#31-mstr-bgc" title="Permanent link">&para;</a></h3>
+<p>MStr-BGC 部分示例代码如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">ilat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlat</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ilon</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlon</span><span class="p">):</span>
+
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">litr1c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>   <span class="c1"># cmatrix_cpools (7,10,12)</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">litr2c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">litr3c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">cwdc_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">soil1c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">soil2c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+        <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">soil3c_vr_in</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nstep</span><span class="p">):</span>
+            <span class="n">tot2cwdc_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span>   <span class="o">=</span> <span class="n">tot2cwdc</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>       <span class="c1"># tot2cwdc_new (12,10)</span>
+            <span class="n">tot2litr1c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">tot2litr1c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+            <span class="n">tot2litr2c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">tot2litr2c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+            <span class="n">tot2litr3c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">tot2litr3c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+
+            <span class="n">b2cwdc</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span>   <span class="o">=</span> <span class="n">b_cwdc</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>               <span class="c1"># b2cwdc (12, 10)</span>
+            <span class="n">b2litr1c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">b_litr1c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+            <span class="n">b2litr2c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">b_litr2c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+            <span class="n">b2litr3c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">b_litr3c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>
+
+            <span class="n">totcm</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">totc</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">]</span>                           <span class="c1"># totcm (12)</span>
+
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nstep</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="c1"># vertical matrix</span>
+            <span class="n">vert_mat</span> <span class="o">=</span> <span class="n">vert_matrix</span><span class="p">(</span><span class="n">use_vert_soilC</span><span class="p">,</span> <span class="n">altmax_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">altmax_lastyr_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">zsoi</span><span class="p">,</span> <span class="n">zisoi</span><span class="p">,</span> <span class="n">dz</span><span class="p">)</span>
+
+            <span class="c1"># tranfer matrix</span>
+            <span class="n">A_mat</span> <span class="o">=</span> <span class="n">a_matrix</span><span class="p">(</span><span class="n">use_vert_soilC</span><span class="p">,</span> <span class="n">cellsand</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">])</span>
+
+            <span class="c1"># K matrix</span>
+            <span class="n">K_mat</span> <span class="o">=</span> <span class="n">k_matrix</span><span class="p">(</span><span class="n">use_vert_soilC</span><span class="p">,</span> <span class="n">wscalar_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">tscalar_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">oscalar_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">nscalar_in</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="p">:,</span> <span class="n">ilat</span><span class="p">,</span> <span class="n">ilon</span><span class="p">],</span> <span class="n">zsoi</span><span class="p">)</span>
+
+            <span class="n">cmatrix_in</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+            <span class="n">cmatrix_in1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">7</span><span class="p">))</span>
+            <span class="n">allo_in</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">use_vert_soilC</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlev_decomp</span><span class="p">):</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                    <span class="n">cmatrix_current</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+
+                    <span class="c1"># input to cwd, litr</span>
+                    <span class="n">cmatrix_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2cwdc_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                    <span class="n">cmatrix_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr1c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                    <span class="n">cmatrix_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr2c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                    <span class="n">cmatrix_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr3c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+
+                    <span class="n">allo_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">b2cwdc</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+                    <span class="n">allo_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">b2litr1c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+                    <span class="n">allo_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">b2litr2c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+                    <span class="n">allo_in</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span> <span class="o">=</span> <span class="n">b2litr3c</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+
+                <span class="n">totc_in</span> <span class="o">=</span> <span class="n">totcm</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">emu_in</span> <span class="o">=</span> <span class="n">allo_in</span> <span class="o">*</span> <span class="n">totc_in</span>
+
+                <span class="n">cmatrix_current</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">cmatrix_current</span><span class="p">)</span>
+
+                <span class="c1"># the main part update state vvariables</span>
+                <span class="n">cmatrix_next</span> <span class="o">=</span> <span class="n">cmatrix_current</span> <span class="o">+</span> <span class="n">emu_in</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">A_mat</span><span class="p">,</span> <span class="n">K_mat</span><span class="p">)</span> <span class="o">-</span> <span class="n">vert_mat</span><span class="p">),</span> <span class="n">cmatrix_current</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">tnext</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlev_decomp</span><span class="p">):</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">0</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+                    <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">6</span> <span class="o">*</span> <span class="n">nlev_decomp</span><span class="p">]</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># in clm4, no vertical structure</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_current_clm4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">]</span>
+                <span class="n">cmatrix_in1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2cwdc_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">cmatrix_in1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr1c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">cmatrix_in1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr2c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">cmatrix_in1</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">tot2litr3c_new</span><span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+
+                <span class="n">cmatrix_next_clm4</span> <span class="o">=</span> <span class="n">cmatrix_current_clm4</span> <span class="o">+</span> <span class="n">cmatrix_in1</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">A_mat</span><span class="p">,</span> <span class="n">K_mat</span><span class="p">),</span> <span class="n">cmatrix_current_clm4</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+                <span class="n">tnext</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+                <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+</code></pre></div>
+
+<h3 id="32">3.2 输出结果描述<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>基于上述模块，通过设置<code>use_vert_soilC</code>， 可以选择不包含土壤深度结构的CLM4或者选择包含土壤深度结构的CLM4.5 分别进行模拟。进一步地，通过对比模拟结果和观测数据的差异来比较模型的优劣程度。</p>
+<p>不考虑土壤深度结构情况下凋落物及土壤碳库全球分布图：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/carbon%20storage%20from%20CLM4.png" alt="carbon storage from CLM4"  align="center" /></div>
+
+<p>不考虑土壤深度结构情况下模拟土壤碳库与观测值差异：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/Emu2obs_clm4.png" alt="Difference between CLM4 emulated and observed soil carbon content"  align="center" /></div>
+
+<p>考虑土壤深度结构情况下凋落物及土壤碳库全球分布图：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/carbon%20storage%20from%20CLM45.png" alt="carbon storage from CLM4.5"  align="center" /></div>
+
+<p>考虑土壤深度结构情况下模拟土壤碳库与观测值差异：</p>
+<div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/Emu2obs_clm45.png" alt="Difference between CLM4.5 emulated and observed soil carbon content"  align="center" /></div>
+
+<h2 id="4">4. 小结<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>为了提高模型对现实世界的模拟和对未来气候变化下的预测能力，模型融合了越来越多的生物学过程和参数，例如氮吸收、微生物过程、土壤深度和死亡率过程等，在提高模型现实度的同时也使得模型变得越来越复杂，不同模型模拟结果存在巨大差异，模型间存在巨大的不确定性。因此，本模块仅以CLM为例，通过考虑是否包含土壤深度结构，模拟不同土壤结构对生物地球化学循环的影响，进一步和观测数据进行比较，从而评价模型结构的优劣。以期未来可以进一步改进模型，提高陆面模式在区域尺度的模拟精度。</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../MCMC-module/" title="MCMC module" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                MCMC module
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

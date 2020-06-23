@@ -283,14 +283,7 @@
         
           <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
-    4.1 模拟结果验证
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    4.2 小结
+    4.1 小结
   </a>
   
 </li>
@@ -322,6 +315,18 @@
   <li class="md-nav__item">
     <a href="MCMC-module/" title="MCMC module" class="md-nav__link">
       MCMC module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="MStr_BGC%20module/" title="MStr-BGC module" class="md-nav__link">
+      MStr-BGC module
     </a>
   </li>
 
@@ -450,14 +455,7 @@
         
           <li class="md-nav__item">
   <a href="#41" class="md-nav__link">
-    4.1 模拟结果验证
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
-    4.2 小结
+    4.1 小结
   </a>
   
 </li>
@@ -641,9 +639,7 @@ X_{ss} = -(\overline{\xi}A_sK_s)^{-1}\overline{B_s}I_{ss}
 <div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/SOIL3C_Carbon_Storage.png" alt="Soil3 carbon storage"  align="center" /></div>
 
 <h2 id="4">4. 结果说明<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<h3 id="41">4.1 模拟结果验证<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
-<p>在站点尺度上，我们在全球选取了6个单点进行模拟，用传统方法将其转至平衡，并与基于SASU方法计算得到的结果进行比较，结果表明：</p>
-<h3 id="42">4.2 小结<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<h3 id="41">4.1 小结<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <p>陆地生态系统模型作为地球系统模式的重要组成部分，提高其模拟和预测能力是准确评估气候变化趋势、做出正确应对分析措施的基础。而随着模型包含的过程越来越多，其模拟、评估以及不确定性分析，都面临巨大的挑战。其中之一就是将模型运行至平衡态的问题，因生态系统过程模型在进行任何研究模拟之前，都需将其运行至平衡态，而考虑到模型计算过程复杂所需消耗计算资源过大的问题，目前运行模型至平衡态并没哟令人满意的解决方案。
 根据碳循环过程所建立一阶矩阵微分方程求解析解的半解析解加速平衡方法（SASU），获得平衡状态值不受初始态设置的影响，取决于光合输入与分配、环境影响因素、碳周转速率，以及各个碳库之间的转移比例关系，其中碳周转速率是模型自身设置不随时间变化，所以SASU达到平衡状态的循环次数由其他几个因素决定。而相对于粗木质残体和惰性库等凋落物和土壤碳库的周转速率而言，植被碳库周转是一个快过程。因此，本模块仅以凋落物和土壤碳库周转为例进行SASU计算求解半平衡态下碳库大小。进一步与传统方法比较表明SASU可以加速模型转至平衡态，有效提高计算效率，节省计算时间。</p>
 <h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
