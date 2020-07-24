@@ -1,0 +1,757 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.0">
+    
+    
+      
+        <title>Benchmark module - SASU</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.18ac144a.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#benchmark-module-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="SASU" class="md-header-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            SASU
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Benchmark module
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SASU" class="md-nav__button md-logo" aria-label="SASU">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    SASU
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="SASU module" class="md-nav__link">
+      SASU module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MCMC-module/" title="MCMC module" class="md-nav__link">
+      MCMC module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../MStr_BGC%20module/" title="MStr-BGC module" class="md-nav__link">
+      MStr-BGC module
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Benchmark module
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Benchmark module" class="md-nav__link md-nav__link--active">
+      Benchmark module
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 数据来源
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 数据来源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-gpp" class="md-nav__link">
+    1.1 GPP
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 GPP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-gosif-gpp" class="md-nav__link">
+    1.1.1 GOSIF GPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-modis-gpp" class="md-nav__link">
+    1.1.2 MODIS GPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-fluxcom-gpp" class="md-nav__link">
+    1.1.3 FLUXCOM GPP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-npp" class="md-nav__link">
+    1.2 NPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-soc" class="md-nav__link">
+    1.3 SOC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-lai" class="md-nav__link">
+    1.4 LAI
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 LAI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-gimms-lai" class="md-nav__link">
+    1.4.1 GIMMS LAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-glass-lai" class="md-nav__link">
+    1.4.2 GLASS LAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-globmap-lai" class="md-nav__link">
+    1.4.3 GLOBMAP LAI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-et" class="md-nav__link">
+    1.5 ET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-sin" class="md-nav__link">
+    1.6 SIN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-benchmark" class="md-nav__link">
+    2. Benchmark 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Benchmark 模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-benchmark" class="md-nav__link">
+    2.1 Benchmark 模块运行步骤
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 小结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 数据来源
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 数据来源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-gpp" class="md-nav__link">
+    1.1 GPP
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1 GPP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-gosif-gpp" class="md-nav__link">
+    1.1.1 GOSIF GPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-modis-gpp" class="md-nav__link">
+    1.1.2 MODIS GPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-fluxcom-gpp" class="md-nav__link">
+    1.1.3 FLUXCOM GPP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-npp" class="md-nav__link">
+    1.2 NPP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-soc" class="md-nav__link">
+    1.3 SOC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-lai" class="md-nav__link">
+    1.4 LAI
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4 LAI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-gimms-lai" class="md-nav__link">
+    1.4.1 GIMMS LAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-glass-lai" class="md-nav__link">
+    1.4.2 GLASS LAI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-globmap-lai" class="md-nav__link">
+    1.4.3 GLOBMAP LAI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-et" class="md-nav__link">
+    1.5 ET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-sin" class="md-nav__link">
+    1.6 SIN
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-benchmark" class="md-nav__link">
+    2. Benchmark 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Benchmark 模块">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-benchmark" class="md-nav__link">
+    2.1 Benchmark 模块运行步骤
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 小结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="benchmark-module-documentation">Benchmark module documentation<a class="headerlink" href="#benchmark-module-documentation" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 数据来源<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="11-gpp">1.1 GPP<a class="headerlink" href="#11-gpp" title="Permanent link">&para;</a></h3>
+<h4 id="111-gosif-gpp">1.1.1 GOSIF GPP<a class="headerlink" href="#111-gosif-gpp" title="Permanent link">&para;</a></h4>
+<p>GOSIF-GPP为基于OCO-2的全球SIF产品（GOSIF）以及SIF与GPP之间的线性关系，以2000年至2018年期间的0.05°空间分辨率和8天时间步长对GPP进行了全球映射所得到的数据产品。基于高质量的SIF格点观测数据所得到的GPP将不再需要任何其他输入数据（例如气候数据，土壤属性等），因此能够仅基于SIF的观测值独立映射出GPP进而在区域和全球尺度上生成更加精确的GPP结果。本模块中，我们将原始数据的时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h4 id="112-modis-gpp">1.1.2 MODIS GPP<a class="headerlink" href="#112-modis-gpp" title="Permanent link">&para;</a></h4>
+<p>MODIS 是美国航天局为主提出并实施的全球尺度观测计划对地观测系统中的重要传感器之一，其产品覆盖海洋、陆地和大气，已广泛应用于各类研究。本模块中使用的数据为2001-2014年的MOD17A3 GPP数据，时间分辨率为一年，空间分辨率为1km重采样到CLM模型输出的分辨率（0.94x1.25°）</p>
+<h4 id="113-fluxcom-gpp">1.1.3 FLUXCOM GPP<a class="headerlink" href="#113-fluxcom-gpp" title="Permanent link">&para;</a></h4>
+<p>FLUXCOM利用机器学习的方法融合了FLUXNET涡度通量塔的碳通量观测数据和遥感以及气象数据来估计生态系统总初级生产力（GPP）。其是马克思-普朗克生物地球化学研究所的产品，空间分辨率为0.5°，时间分辨率为1天。本模块中为应用其进行基准性分析，将其时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h3 id="12-npp">1.2 NPP<a class="headerlink" href="#12-npp" title="Permanent link">&para;</a></h3>
+<p>美国国家航空航天局MODIS卫星的NPP数据（MOD17A3 NPP）用于评价CLM模拟的NPP。该数据产品包括自2000年以来全球NPP估计值，分辨率为每年1×1 km。目前该产品已校正云污染，且其数据的准确性已被广泛衡量，并已广泛用于评估模型模拟的生物地球化学过程。由于MODIS NPP是根据每种生物群落类型内固定参数驱动的光能利用效率算法估算的，因此不可避免地会导致时间和空间变化的不确定性。 MOD17算法的每日气象输入为来自全球建模和同化办公室/ NASA提供的全球气象再分析数据。在本模块中，将MOD17A3的NPP估算值与模型所模拟的NPP多年平均值进行了比较。使用Arcgis Spatial analysis 中的resample tool对数据进行重采样，并使用最邻近算法将数据重新采样为与CLM模型一致的空间分辨率0.94°×1.25°分辨率。</p>
+<h3 id="13-soc">1.3 SOC<a class="headerlink" href="#13-soc" title="Permanent link">&para;</a></h3>
+<p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。即MCMC模块中所用数据库，因此本篇不再赘述。</p>
+<h3 id="14-lai">1.4 LAI<a class="headerlink" href="#14-lai" title="Permanent link">&para;</a></h3>
+<h4 id="141-gimms-lai">1.4.1 GIMMS LAI<a class="headerlink" href="#141-gimms-lai" title="Permanent link">&para;</a></h4>
+<p>全球库存建模与制图研究（GLobal Inventory Modeling and Mapping Studies, GIMMS）LAI是基于GIMMS组的第三代归一化植被指数（NDVI3 g）和人工神经网络（ANN）模型得出的。 该数据集的时间分辨率为半个月，度空间分辨率为十二分之一。 该数据集的质量已通过一系列测试进行了评估，结果表明该数据适合用于研究。本模块中为应用其进行基准性分析，将其时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h4 id="142-glass-lai">1.4.2 GLASS LAI<a class="headerlink" href="#142-glass-lai" title="Permanent link">&para;</a></h4>
+<p>全球陆面卫星（Global Land Surface Satellite, GLASS）LAI产品是使用通用回归神经网络从MODIS和AVHRR时间序列反射数据生成的。 该数据集的时间分辨率为8天。 从1981年到1999年，根据LTDR AVHRR反射率数据生成LAI产品。 它以地理纬度/经度投影形式提供，空间分辨率为0.05°（在赤道约5 km）。 从2000年到2013年，LAI产品来自MODIS表面反射率数据。 它以正弦投影形式提供，分辨率为1 km。 广泛的验证保证了该方法可以以更高的准确性估算LAI的时空连续领域。本模块中为应用其进行基准性分析，将其时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h4 id="143-globmap-lai">1.4.3 GLOBMAP LAI<a class="headerlink" href="#143-globmap-lai" title="Permanent link">&para;</a></h4>
+<p>GLOBMAP LAI是通过将高级高分辨率辐射计（Advanced Very High Resolution Radiometer, AVHRR）LAI（1981–2000）和MODIS LAI（2000–2011）融合而构建的。1981-2000年期间的AVHRR LAI是根据重叠期间（2000-2006年）每个像素处的AVHRR观测值与MODIS LAI之间的关系估算的。 GLOBMAP LAI数据集的时间分辨率与GIMMS LAI数据集的时间分辨率相同，而空间分辨率为8 km。本模块中为应用其进行基准性分析，将其时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h3 id="15-et">1.5 ET<a class="headerlink" href="#15-et" title="Permanent link">&para;</a></h3>
+<p>蒸散（Evapotranspiration, ET）是植被及地面整体向大气输送的水汽总通量，MOD16 ET是土壤蒸发，湿冠层蒸发和干冠层表面植物蒸腾作用产生的水蒸气通量的总和。长期以来，遥感一直被认为是在陆地表面提供空间分布的区域ET信息的最可行手段。MOD16A3是年度陆地生态系统蒸散（ET）数据集，空间分辨率为0.5公里。 MOD16算法基于Penman-Monteith方程的逻辑，该方程使用每日气象再分析数据和来自MODIS的8天遥感植被特性动态作为输入，以此计算蒸散。本模块中为应用其进行基准性分析，将其时间分辨率转化为一年，并将空间分辨率重采样到0.94°x1.25°。</p>
+<h3 id="16-sin">1.6 SIN<a class="headerlink" href="#16-sin" title="Permanent link">&para;</a></h3>
+<p>我们从CNERN收集了SIN数据（1990-2008年）。此外，还提取了例如经纬度，土壤采样深度和采样季节等辅助信息。此外，还利用知网检索了1980-2010年间发表的与SIN相关的文献。所选研究必须直接报道SIN或提供铵态氮和硝酸盐氮含量。原始SIN数据从文献的表格中收集，通过GetData Graph Digitizer软件从图表中提取，或计算铵态氮（NH<sub>4</sub><sup>+</sup>-N）和硝态氮（NO<sub>3</sub><sup>-</sup>-N）和总和。所有收集到的SIN数据应代表采样点的基本土壤肥力。因此，我们仅在自然条件下（对照组）采用测量值，以避免其他操作的影响。对从不同土壤深度采样的SIN数据进行平均，并视为每个采样点的基本SIN状态。更多详细信息请查阅Wei et al (2019)。</p>
+<h2 id="2-benchmark">2. Benchmark 模块<a class="headerlink" href="#2-benchmark" title="Permanent link">&para;</a></h2>
+<h3 id="21-benchmark">2.1 Benchmark 模块运行步骤<a class="headerlink" href="#21-benchmark" title="Permanent link">&para;</a></h3>
+<p>Benchmark部分示例代码如下：</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">ivar</span> <span class="ow">in</span> <span class="n">var_list</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">ivar</span> <span class="o">==</span> <span class="s1">&#39;GPP&#39;</span><span class="p">:</span>   <span class="c1"># GPP</span>
+        <span class="n">f_fig</span> <span class="o">=</span> <span class="n">f_out_path</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">ivar</span>
+        <span class="n">mkdir</span><span class="p">(</span><span class="n">f_fig</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">iGPP</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">iGPP</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># GOSIF GPP</span>
+                <span class="n">f_fig_clm</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/clm_GOSIF_GPP.png&#39;</span>
+                <span class="n">f_fig_obs</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/obs_GOSIF_GPP.png&#39;</span>
+                <span class="n">f_fig_delta</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/delta_GOSIF_GPP.png&#39;</span>
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">dur_GOSIF_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_GOSIF_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">dur_GOSIF_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_GOSIF_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;in GOSIF GPP: startyr is: &#39;</span><span class="p">,</span> <span class="n">startyr</span><span class="p">,</span> <span class="s1">&#39;endyr is: &#39;</span><span class="p">,</span> <span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP observation data</span>
+                <span class="n">GOSIF_GPP_obs</span> <span class="o">=</span> <span class="n">Read_observed_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iGOSIF_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP simulation data</span>
+                <span class="n">GPP_clm</span> <span class="o">=</span> <span class="n">Read_emu_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iGOSIF_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># calculate the difference between simulated and observed data</span>
+                <span class="n">delta_GPP</span> <span class="o">=</span> <span class="n">GPP_clm</span> <span class="o">-</span> <span class="n">GOSIF_GPP_obs</span>
+
+                <span class="c1"># plot benchmark global map</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iGOSIF_GPP</span><span class="p">,</span> <span class="n">iemu</span><span class="p">,</span> <span class="n">GPP_clm</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_clm</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iGOSIF_GPP</span><span class="p">,</span> <span class="n">iobs</span><span class="p">,</span> <span class="n">GOSIF_GPP_obs</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_obs</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iGOSIF_GPP</span><span class="p">,</span> <span class="n">idelta</span><span class="p">,</span> <span class="n">delta_GPP</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_delta</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="n">iGPP</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># MODIS GPP</span>
+                <span class="n">f_fig_clm</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/clm_MODIS_GPP.png&#39;</span>
+                <span class="n">f_fig_obs</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/obs_MODIS_GPP.png&#39;</span>
+                <span class="n">f_fig_delta</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/delta_MODIS_GPP.png&#39;</span>
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">dur_MODIS_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_MODIS_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">dur_MODIS_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_MODIS_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;in MODIS GPP: startyr is: &#39;</span><span class="p">,</span> <span class="n">startyr</span><span class="p">,</span> <span class="s1">&#39;endyr is: &#39;</span><span class="p">,</span> <span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP observation data</span>
+                <span class="n">MODIS_GPP_obs</span> <span class="o">=</span> <span class="n">Read_observed_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iMODIS_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP simulation data</span>
+                <span class="n">GPP_clm</span> <span class="o">=</span> <span class="n">Read_emu_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iMODIS_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># calculate the difference between simulated and observed data</span>
+                <span class="n">delta_GPP</span> <span class="o">=</span> <span class="n">GPP_clm</span> <span class="o">-</span> <span class="n">MODIS_GPP_obs</span>
+
+                <span class="c1"># plot benchmark global map</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iMODIS_GPP</span><span class="p">,</span> <span class="n">iemu</span><span class="p">,</span> <span class="n">GPP_clm</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_clm</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iMODIS_GPP</span><span class="p">,</span> <span class="n">iobs</span><span class="p">,</span> <span class="n">MODIS_GPP_obs</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_obs</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iMODIS_GPP</span><span class="p">,</span> <span class="n">idelta</span><span class="p">,</span> <span class="n">delta_GPP</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_delta</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>  <span class="c1"># FLUXCOM GPP</span>
+                <span class="n">f_fig_clm</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/clm_FLUXCOM_GPP.png&#39;</span>
+                <span class="n">f_fig_obs</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/obs_FLUXCOM_GPP.png&#39;</span>
+                <span class="n">f_fig_delta</span> <span class="o">=</span> <span class="n">f_fig</span> <span class="o">+</span> <span class="s1">&#39;/delta_FLUXCOM_GPP.png&#39;</span>
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">dur_FLUXCOM_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">startyr</span> <span class="o">=</span> <span class="n">dur_FLUXCOM_GPP</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">dur_FLUXCOM_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_clm</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">endyr</span> <span class="o">=</span> <span class="n">dur_FLUXCOM_GPP</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;in FLUXCOM GPP: startyr is: &#39;</span><span class="p">,</span> <span class="n">startyr</span><span class="p">,</span> <span class="s1">&#39;endyr is: &#39;</span><span class="p">,</span> <span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP observation data</span>
+                <span class="n">FLUXCOM_GPP_obs</span> <span class="o">=</span> <span class="n">Read_observed_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iFLUXCOM_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># read GPP simulation data</span>
+                <span class="n">GPP_clm</span> <span class="o">=</span> <span class="n">Read_emu_data</span><span class="p">(</span><span class="n">icount</span><span class="o">=</span><span class="n">iFLUXCOM_GPP</span><span class="p">,</span> <span class="n">startyr</span><span class="o">=</span><span class="n">startyr</span><span class="p">,</span> <span class="n">endyr</span><span class="o">=</span><span class="n">endyr</span><span class="p">)</span>
+
+                <span class="c1"># calculate the difference between simulated and observed data</span>
+                <span class="n">delta_GPP</span> <span class="o">=</span> <span class="n">GPP_clm</span> <span class="o">-</span> <span class="n">FLUXCOM_GPP_obs</span>
+
+                <span class="c1"># plot benchmark global map</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iFLUXCOM_GPP</span><span class="p">,</span> <span class="n">iemu</span><span class="p">,</span> <span class="n">GPP_clm</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_clm</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iFLUXCOM_GPP</span><span class="p">,</span> <span class="n">iobs</span><span class="p">,</span> <span class="n">FLUXCOM_GPP_obs</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_obs</span><span class="p">)</span>
+                <span class="n">plot_globamp</span><span class="p">(</span><span class="n">iFLUXCOM_GPP</span><span class="p">,</span> <span class="n">idelta</span><span class="p">,</span> <span class="n">delta_GPP</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">f_fig_delta</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="3">3. 小结<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>为了提高模型对现实世界的模拟和对未来气候变化下的预测能力，模型融合了越来越多的生物学过程和参数，例如氮吸收、微生物过程、土壤深度和死亡率过程等，在提高模型现实度的同时也使得模型变得越来越复杂，不同模型模拟结果存在巨大差异，模型间存在巨大的不确定性。因此，本模块仅以CLM为例，构建了模型中碳氮水的基础观测数据集，并以此为基准对模型中的关键过程和变量进行评价，以期未来可以进一步改进模型，提高陆面模式在区域尺度的模拟精度。</p>
+<h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>[1] Li, X.; Xiao, J. Mapping Photosynthesis Solely from Solar-Induced Chlorophyll Fluorescence: A Global, Fine-Resolution Dataset of Gross Primary Production Derived from OCO-2. <strong>Remote Sens.</strong> (2019), 11, 2563. <a href="https://www.mdpi.com/2072-4292/11/21/2563">doi: 10.3390/rs11212563</a></p>
+<p>[2] Wei, N., Cui, E., Huang, K., Du, Z., Zhou, J., Xu, X., et al. . Decadal stabilization of soil inorganic nitrogen as a benchmark for global land models. <strong>Journal of Advances in Modeling Earth Systems</strong>, (2019) 11, 1088– 1099. <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS001633">doi:10.1029/2019MS001633</a> </p>
+<p>[3] Zhu, Z.; Bi, J.; Pan, Y.; Ganguly, S.; Anav, A.; Xu, L.; Samanta, A.; Piao, S.; Nemani, R.R.; Myneni, R.B. Global Data Sets of Vegetation Leaf Area Index (LAI)3g and Fraction of Photosynthetically Active Radiation (FPAR)3g Derived from Global Inventory Modeling and Mapping Studies (GIMMS) Normalized Difference Vegetation Index (NDVI3g) for the Period 1981 to 2011. **Remote Sens.* **(2013), <em>5</em>, 927-948. <a href="https://www.mdpi.com/2072-4292/5/2/927">doi: 10.3390/rs5020927</a></p>
+<p>[4] Z. Xiao et al. Use of General Regression Neural Networks for Generating the GLASS Leaf Area Index Product From Time-Series MODIS Surface Reflectance. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>, vol. 52, no. 1, pp. 209-223, Jan. 2014, <a href="https://ieeexplore.ieee.org/document/6451248">doi: 10.1109/TGRS.2013.2237780</a></p>
+<p>[5] Liu, Y., Liu, R., and Chen, J. M. , Retrospective retrieval of long‐term consistent global leaf area index (1981–2011) from combined AVHRR and MODIS data, ***J. Geophys. Res.**, (2012) 117, G04003, <a href="https://doi.org/10.1029/2012JG002084">doi:10.1029/2012JG002084</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../MStr_BGC%20module/" title="MStr-BGC module" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                MStr-BGC module
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.27c6a5e6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

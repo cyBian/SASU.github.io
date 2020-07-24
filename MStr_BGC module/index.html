@@ -223,23 +223,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-mstr-bgc" class="md-nav__link">
-    3. MStr-BGC 模块
+  <a href="#3" class="md-nav__link">
+    3. 微生物碳利用效率对土壤碳储量的影响
   </a>
   
-    <nav class="md-nav" aria-label="3. MStr-BGC 模块">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mstr-bgc" class="md-nav__link">
+    4. MStr-BGC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="4. MStr-BGC 模块">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-mstr-bgc" class="md-nav__link">
-    3.1 MStr-BGC 模块运行步骤
+  <a href="#41-mstr-bgc" class="md-nav__link">
+    4.1 MStr-BGC 模块运行步骤
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#32" class="md-nav__link">
-    3.2 输出结果描述
+  <a href="#42" class="md-nav__link">
+    4.2 输出结果描述
   </a>
   
 </li>
@@ -250,8 +257,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    4. 小结
+  <a href="#5" class="md-nav__link">
+    5. 小结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
   </a>
   
 </li>
@@ -260,6 +274,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Benchmark_module/" title="Benchmark module" class="md-nav__link">
+      Benchmark module
+    </a>
   </li>
 
     
@@ -303,23 +329,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-mstr-bgc" class="md-nav__link">
-    3. MStr-BGC 模块
+  <a href="#3" class="md-nav__link">
+    3. 微生物碳利用效率对土壤碳储量的影响
   </a>
   
-    <nav class="md-nav" aria-label="3. MStr-BGC 模块">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mstr-bgc" class="md-nav__link">
+    4. MStr-BGC 模块
+  </a>
+  
+    <nav class="md-nav" aria-label="4. MStr-BGC 模块">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-mstr-bgc" class="md-nav__link">
-    3.1 MStr-BGC 模块运行步骤
+  <a href="#41-mstr-bgc" class="md-nav__link">
+    4.1 MStr-BGC 模块运行步骤
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#32" class="md-nav__link">
-    3.2 输出结果描述
+  <a href="#42" class="md-nav__link">
+    4.2 输出结果描述
   </a>
   
 </li>
@@ -330,8 +363,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    4. 小结
+  <a href="#5" class="md-nav__link">
+    5. 小结
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考文献
   </a>
   
 </li>
@@ -358,8 +398,24 @@
 <p>Multi-Structure BioGeoChemistry （MStr-BGC）模块 以CLM（Community Land Model）模型为例，将原模型使用平衡方程描述的生态系统碳动态转化为对应的一阶矩阵方程。CLM4和CLM4.5的主要区别在于CLM4.5中增加了土壤垂直结构，因此本模块考虑了土壤垂直结构的差异对碳储量的影响。因此，本模块通过模拟不同土壤结构对生物地球化学循环模拟的影响，比较不同结构模型模拟的差异。以期借此选择性能最优的模型结构进行有针对性的模拟，进而提高陆面生态系统过程模型在区域尺度的模拟精度。</p>
 <h2 id="2">2. 数据来源<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>本模块中我们所用来评价和限制模型的全球土壤有机碳数据来自于Harmonized World Soil Database (HWSD) 数据库。即MCMC模块中所用数据库，因此本篇不再赘述。</p>
-<h2 id="3-mstr-bgc">3. MStr-BGC 模块<a class="headerlink" href="#3-mstr-bgc" title="Permanent link">&para;</a></h2>
-<h3 id="31-mstr-bgc">3.1 MStr-BGC 模块运行步骤<a class="headerlink" href="#31-mstr-bgc" title="Permanent link">&para;</a></h3>
+<h2 id="3">3. 微生物碳利用效率对土壤碳储量的影响<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>近年来随着人们对土壤微生物动力学机制的认识逐渐提高，一些模型中逐渐加入了土壤微生物过程，例如，将微生物过程纳入全球碳循环模拟可以提高模拟结果的准确性。在包含了微生物过程的土壤有机碳模型中，土壤微生物碳利用效率是一个重要参数。</p>
+<p>由于微生物碳利用效率表示了微生物用于生长从碳与进入微生物体内总碳量的比值，这两部分碳不同的温度敏感性决定了微生物碳利用效率具有温度依赖性，随温度变化而变化。一般来说，呼吸作用随温度升高的幅度大于生长作用，因此，在土壤和水生生态系统中，微生物碳利用效率都呈现随温度的增加而逐渐降低的趋势。这种微生物碳利用效率随温度的变化趋势已经在土壤微生物过程表征土壤碳的模型中以线性方程的形式进行了表达：
+<script type="math/tex; mode=display">
+CUE = CUE_0 + m(T-T0)
+</script>
+其中， <span><span class="MathJax_Preview">CUE_0</span><script type="math/tex">CUE_0</script></span> 是参考温度下的微生物碳利用效率的值，<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span> 是温度响应系数（即，温度每变化一度所引起的CUE变化的值），<span><span class="MathJax_Preview">T_0</span><script type="math/tex">T_0</script></span> 是参考温度（一般是20℃）。</p>
+<p>考率土壤微生物碳利用效率与纬度、经度、年均温、年降雨、土壤pH值之间没有显著线性相关关系，因此，本模块中采用Qiao (2019) 文章中土壤微生物碳利用效率公式对模型中转移系数加以限制：</p>
+<div>
+<div class="MathJax_Preview">
+CUE = 0.475 - 0.016 \times (T-20)
+</div>
+<script type="math/tex; mode=display">
+CUE = 0.475 - 0.016 \times (T-20)
+</script>
+</div>
+<h2 id="4-mstr-bgc">4. MStr-BGC 模块<a class="headerlink" href="#4-mstr-bgc" title="Permanent link">&para;</a></h2>
+<h3 id="41-mstr-bgc">4.1 MStr-BGC 模块运行步骤<a class="headerlink" href="#41-mstr-bgc" title="Permanent link">&para;</a></h3>
 <p>MStr-BGC 部分示例代码如下：</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">ilat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlat</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">ilon</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nlon</span><span class="p">):</span>
@@ -464,7 +520,7 @@
                 <span class="n">cmatrix_cpools</span><span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tnext</span><span class="p">]</span> <span class="o">=</span> <span class="n">cmatrix_next_clm4</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
 </code></pre></div>
 
-<h3 id="32">3.2 输出结果描述<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<h3 id="42">4.2 输出结果描述<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
 <p>基于上述模块，通过设置<code>use_vert_soilC</code>， 可以选择不包含土壤深度结构的CLM4或者选择包含土壤深度结构的CLM4.5 分别进行模拟。进一步地，通过对比模拟结果和观测数据的差异来比较模型的优劣程度。</p>
 <p>不考虑土壤深度结构情况下凋落物及土壤碳库全球分布图：</p>
 <div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/carbon%20storage%20from%20CLM4.png" alt="carbon storage from CLM4"  align="center" /></div>
@@ -478,8 +534,10 @@
 <p>考虑土壤深度结构情况下模拟土壤碳库与观测值差异：</p>
 <div style="text-align:center"><img src="https://github.com/cyBian/demo/raw/master/img/MStr-BGC/Emu2obs_clm45.png" alt="Difference between CLM4.5 emulated and observed soil carbon content"  align="center" /></div>
 
-<h2 id="4">4. 小结<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p>为了提高模型对现实世界的模拟和对未来气候变化下的预测能力，模型融合了越来越多的生物学过程和参数，例如氮吸收、微生物过程、土壤深度和死亡率过程等，在提高模型现实度的同时也使得模型变得越来越复杂，不同模型模拟结果存在巨大差异，模型间存在巨大的不确定性。因此，本模块仅以CLM为例，通过考虑是否包含土壤深度结构，模拟不同土壤结构对生物地球化学循环的影响，进一步和观测数据进行比较，从而评价模型结构的优劣。以期未来可以进一步改进模型，提高陆面模式在区域尺度的模拟精度。</p>
+<h2 id="5">5. 小结<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>为了提高模型对现实世界的模拟和对未来气候变化下的预测能力，模型融合了越来越多的生物学过程和参数，例如氮吸收、微生物过程、土壤深度和死亡率过程等，在提高模型现实度的同时也使得模型变得越来越复杂，不同模型模拟结果存在巨大差异，模型间存在巨大的不确定性。因此，本模块仅以CLM为例，通过考虑是否包含土壤深度结构及是否考虑微生物碳利用效率，模拟不同土壤结构对生物地球化学循环的影响，进一步和观测数据进行比较，从而评价模型结构的优劣。以期未来可以进一步改进模型，提高陆面模式在区域尺度的模拟精度。</p>
+<h2 id="_1">参考文献<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>[1] Qiao, Y., Wang, J., Liang, G. et al. Global variation of soil microbial carbon-use efficiency in relation to growth temperature and substrate supply. <strong>Sci Rep</strong> 9, 5621 (2019). <a href="https://www.nature.com/articles/s41598-019-42145-6">doi: 10.1038/s41598-019-42145-6</a></p>
                 
               
               
@@ -512,6 +570,20 @@
             </div>
           </a>
         
+        
+          <a href="../Benchmark_module/" title="Benchmark module" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Benchmark module
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
